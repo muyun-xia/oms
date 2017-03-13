@@ -5,6 +5,7 @@
     <title>oms</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/login.css">
+
 </head>
 <body>
     <header>
@@ -20,15 +21,20 @@
     </header>
     <div id="content">
         <div class="inner">
-            <h1>订单管理系统</h1>
-            <p class="sub-heading">textstsal.ifjlfjhweop;fhj;pwoi</p>
-            <button>了解我</button>
-            <div class="more">更多</div>
+          <form action="login.do">
+              <label>{{username}}</label><input type="text" name="username">
+              <label>{{password}}</label><input type="password" name="password">
+              <button type="submit" @click="login">登录</button>
+          </form>
         </div>
     </div>
     <footer>
 
     </footer>
 
+
+    <script src="js/vue/vue.min.js"></script>
+    <script src="js/vue/vue-resource.js"></script>
+    <script src="js/Login.js"></script>
 </body>
 </html>
